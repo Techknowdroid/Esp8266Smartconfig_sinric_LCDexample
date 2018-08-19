@@ -1,5 +1,5 @@
 /*
- Tarun Goel VERSION 9.00 -  5th August,2018
+ Techknowdroid VERSION 1.00 -  5th August,2018
 */ 
 
 #include <Arduino.h>
