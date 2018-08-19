@@ -20,7 +20,7 @@ WiFiClient client;
 
 #define MyApiKey ".........................." // In this line Enter your sinric API Key. Your API Key is displayed on sinric.com dashboard
 #define MySSID "FIRSTFLOOR" // In this line Enter your SSID (The router you want to connect to)
-#define MyWifiPassword "............" // In this line Enter your Wifi password
+#define MyWifiPassword "............" // In this line Enter your Wifi password for the router you want to connect to.
 #define MYPIN1 D3  //GPIO 0
 #define MYPIN2 D4  //GPIO 02
 #define MYPIN3 D5  //GPIO 14
