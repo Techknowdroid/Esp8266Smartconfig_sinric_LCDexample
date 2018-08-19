@@ -19,7 +19,7 @@ WebSocketsClient webSocket;
 WiFiClient client;
 
 #define MyApiKey ".........................." // In this line Enter your sinric API Key. Your API Key is displayed on sinric.com dashboard
-#define MySSID "FIRSTFLOOR" // TODO: Change to your Wifi network SSID
+#define MySSID "FIRSTFLOOR" // In this line Enter your SSID (The router you want to connect to)
 #define MyWifiPassword "............" // In this line Enter your Wifi password
 #define MYPIN1 D3  //GPIO 0
 #define MYPIN2 D4  //GPIO 02
@@ -38,7 +38,7 @@ void setTargetTemperatureOnServer(String deviceId, String value, String scale);
 // deviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here
 
 void turnOn(String deviceId) {
-  if (deviceId == "5b632822a98fea5737c2c941") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN1 is Light 13 for me.
+  if (deviceId == "....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN1 is Light 13 for me.
   {  
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -52,7 +52,7 @@ void turnOn(String deviceId) {
     lcd.noBacklight();
   
   } 
-  else if (deviceId == "5b6328d1a98fea5737c2c942") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN2 is Light 14 for me.
+  else if (deviceId == "......................") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN2 is Light 14 for me.
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -66,7 +66,7 @@ void turnOn(String deviceId) {
     lcd.noBacklight();
 
   }
-   else if (deviceId == "5b6328e7a98fea5737c2c943") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN3 is Light 15 for me.
+   else if (deviceId == ".....................") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN3 is Light 15 for me.
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -80,7 +80,7 @@ void turnOn(String deviceId) {
     lcd.noBacklight();
 
   }
-   else if (deviceId == "5b632910a98fea5737c2c944") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN4 is Light 16 for me.
+   else if (deviceId == ".....................") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN4 is Light 16 for me.
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -94,7 +94,7 @@ void turnOn(String deviceId) {
     lcd.noBacklight();
 
   }
-   else if (deviceId == "5b63291ea98fea5737c2c945") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN5 is Light 17 for me.
+   else if (deviceId == ".....................") // In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here.Device ID of MYPIN5 is Light 17 for me.
   { 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
@@ -116,7 +116,7 @@ void turnOn(String deviceId) {
 }
 
 void turnOff(String deviceId) {
-   if (deviceId == "5b632822a98fea5737c2c941") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN1 is Light 13 for me.
+   if (deviceId == ".....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN1 is Light 13 for me.
    {  
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
@@ -129,7 +129,7 @@ void turnOff(String deviceId) {
      delay(5000);
      lcd.noBacklight();
    }
-   else if (deviceId == "5b6328d1a98fea5737c2c942") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN2 is Light 14 for me.
+   else if (deviceId == ".....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN2 is Light 14 for me.
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
@@ -143,7 +143,7 @@ void turnOff(String deviceId) {
      lcd.noBacklight();
 
   }
-   else if (deviceId == "5b6328e7a98fea5737c2c943") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN3 is Light 15 for me.
+   else if (deviceId == ".....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN3 is Light 15 for me.
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
@@ -157,7 +157,7 @@ void turnOff(String deviceId) {
      lcd.noBacklight();
 
   }
-   else if (deviceId == "5b632910a98fea5737c2c944") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN4 is Light 16 for me.
+   else if (deviceId == ".....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN4 is Light 16 for me.
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
@@ -171,7 +171,7 @@ void turnOff(String deviceId) {
      lcd.noBacklight();
 
   }
-   else if (deviceId == "5b63291ea98fea5737c2c945") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN5 is Light 17 for me.
+   else if (deviceId == ".....................") //In this line Enter your sinric Device ID. DeviceId is the ID assgined to your smart-home-device in sinric.com dashboard. Copy it from dashboard and paste it here. Device ID of MYPIN5 is Light 17 for me.
    { 
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
